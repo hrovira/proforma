@@ -1,0 +1,73 @@
+{
+    "sections": [
+        {
+            "id": "section-identity",
+            "label": "Identity",
+            "questions": [
+                {
+                    "label": "MID",
+                    "name": "mid",
+                    "placeholder": "Medical ID",
+                    "dataType": "text",
+                    "required": true
+                },
+                {
+                    "label": "First Name",
+                    "name": "firstName",
+                    "dataType": "text",
+                    "required": true
+                },
+                {
+                    "label": "Middle Name",
+                    "name": "middleName",
+                    "dataType": "text",
+                    "required": true
+                },
+                {
+                    "label": "Last Name",
+                    "name": "lastName",
+                    "dataType": "text",
+                    "required": true
+                },
+                {
+                    "label": "Birth date",
+                    "name": "birthdate",
+                    "placeholder": "mm/dd/yyyy",
+                    "dataType": "date"
+                },
+                {
+                    "label": "Gender",
+                    "name": "gender",
+                    "dataType": "radio",
+                    "choices": [
+                        { "label": "Male", "value": "M" },
+                        { "label": "Female", "value": "F" }
+                    ]
+                }
+            ]
+        }, {
+            "id": "section-demographics",
+            "label": "Demographics",
+            "questions": [
+                {
+                    "label": "Question One",
+                    "name": "questionOne",
+                    "dataType": "text",
+                    "required": true
+                },
+                {
+                    "label": "Question Two",
+                    "name": "questionTwo",
+                    "dataType": "text",
+                    "required": true
+                },
+                {
+                    "label": "Question Three",
+                    "name": "questionThree",
+                    "dataType": "text",
+                    "required": false
+                }
+            ]
+        }
+    ]
+}

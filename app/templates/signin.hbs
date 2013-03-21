@@ -1,0 +1,28 @@
+<div class="well well-small">
+    <p class="lead">Sign In</p>
+</div>
+<form class="form-horizontal" onsubmit="return false;">
+    <div class="control-group">
+        <label class="control-label">Username</label>
+        <div class="controls">
+            <input type="text" name="userName" placeholder="Username or email address">
+            <span class="alert alert-warning msg-bad-login hide">
+                <strong>Incorrect Login!</strong> Username or password does not match
+            </span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Password</label>
+        <div class="controls">
+            <input type="password" name="password" placeholder="Alpha-numeric">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <label class="checkbox">
+                <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="btn">Sign in</button>
+        </div>
+    </div>
+</form>

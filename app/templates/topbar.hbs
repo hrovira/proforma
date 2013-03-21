@@ -1,0 +1,50 @@
+<div class="navbar-inner">
+    <div class="container-fluid">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#homePage" onclick="return false;" id="home">
+            <img src="img/logo.png" class="imgbrand" alt="Proforma"> <b class="titled">Proforma</b>
+        </a>
+
+        <div class="nav-collapse">
+            <form action="" class="pull-left navbar-form">
+                <input type="text" placeholder="Search..." class="search-query span3">
+            </form>
+            <ul class="nav nav-pills pull-right">
+                {{#if loggedin}}
+                <li>
+                    <a href="#profile">{{whoami.label}}</a>
+                <li>
+                    <a href="#signout">Sign Out</a>
+                </li>
+                {{/if}}
+                {{#unless loggedin}}
+                <li>
+                    <a href="#signin">Sign In</a>
+                </li>
+                {{/unless}}
+                <li class="dropdown">
+                    <a class="dropdown-toggle active" href="#" data-toggle="dropdown" onclick="return false;">Links</a>
+                    <ul class="about-links dropdown-menu">
+                        <li><a href="#" onclick="return false;">User Guide</a></li>
+                        <li><a href="http://github.com/hrovira/proforma" target="_blank">Open Source Project</a></li>
+                        <li><a href="http://systemsbiology.org" target="_blank">Institute for Systems Biology</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="searchResults" class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3>Search...</h3>
+    </div>
+    <div class="modal-body">
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>

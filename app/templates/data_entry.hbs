@@ -1,0 +1,71 @@
+<div class="well well-small">
+    <p class="lead">Data Entry</p>
+</div>
+
+<div class="accordion" id="accordion-parent">
+    {{#each sections}}
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-parent"
+               href="#collapse-{{id}}">{{label}}</a>
+        </div>
+        <div id="collapse-{{id}}" class="accordion-body collapse">
+            <div class="accordion-inner">
+                <form class="form-horizontal" onsubmit="return false;">
+                    {{#each questions}}
+                    {{#if isText}}
+                    <div class="control-group">
+                        <label class="control-label">{{label}}</label>
+                        <div class="controls">
+                            <input type="text" name="{{name}}" placeholder="{{placeholder}}">
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{#if isDate}}
+                    <div class="control-group">
+                        <label class="control-label">{{label}}</label>
+                        <div class="controls">
+                            <input type="text" name="{{name}}" placeholder="{{placeholder}}">
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{#if isRadio}}
+                    <div class="control-group">
+                        <label class="control-label">{{label}}</label>
+                        <div class="controls">
+                            {{#each choices}}
+                            <label class="radio">
+                                <input type="radio" name="{{../name}}" value="{{value}}">{{label}}
+                            </label>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                    <div class="control-group">
+                        <div class="controls">
+                            <button type="submit" class="btn">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-parent" href="#collapse-tests">
+                Tests
+            </a>
+        </div>
+        <div id="collapse-tests" class="accordion-body collapse">
+            <div class="accordion-inner">
+                <a href="#" onclick="return false;" class="add-test">Add Test</a>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button type="submit" class="btn">Save</button>
+        <button type="submit" class="btn">Complete</button>
+    </div>
+</div>
