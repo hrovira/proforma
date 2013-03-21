@@ -1,6 +1,6 @@
 proforma
 ========
-> Instructions for installing, compiling and deploying *Prototype Data Entry Web* application
+> Instructions for installing, compiling and deploying this *Prototype Data Entry Web App*
 
 ## Support
 
