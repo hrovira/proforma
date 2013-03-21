@@ -16,14 +16,21 @@ proforma
 ## Installation
 
 #### Required Libraries
-> Download and Install these before proceeding
+> Download and install these libraries before proceeding
 
+* Git http://git-scm.com/downloads
 * Python 2.7 http://www.python.org/download/releases/2.7/
 * MongoDB 2.x http://www.mongodb.org/downloads
 * NodeJS NPM http://nodejs.org/download/
 
 #### Web Application Initial Build
-> All commands should be executed from the root of this project.  
+
+```bash
+   # check out project from github into a new 'proforma' directory (project root)
+   $ git clone https://github.com/hrovira/proforma.git
+```
+
+> These commands should be executed from within project root
 
 ```bash
    # installs brunch build system for developers
@@ -47,6 +54,8 @@ proforma
 ```
 
 #### TornadoWeb
+> These commands should be executed from within project root
+
 ```bash
    # start tornado to provide web services and authentication
    # tornado.config (see below) specifies properties used by Python web services
@@ -59,6 +68,8 @@ proforma
 > Upon successful launch, the web application will be accessible at [http://localhost:8000](http://localhost:8000)
 
 #### Development Mode Auto-update 
+> These commands should be executed from within project root
+
 ```bash
    # this process monitors changes in your web application and auto-compiles into _public
    $ brunch w -c brunch.coffee
