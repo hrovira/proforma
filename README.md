@@ -1,6 +1,9 @@
 proforma
 ========
 Prototype Data Entry Webapp
+> The information below provides instructions on how to deploy this web application.  
+> All commands should be executed from the root of this project.  
+> Upon successful launch, the web application will be accessible at [http://localhost:8000](http://localhost:8000)
 
 ## Support
 
