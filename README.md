@@ -42,7 +42,7 @@ proforma
    # creates _public directory (don't check-in)
    # web app is compiled into single-page static HTML website with minified JavaScript
    # serve as static content from your web server, or use tornado as static content handler 
-   $ brunch build
+   $ brunch build -c brunch.coffee 
 ```
 
 ## Deployment
