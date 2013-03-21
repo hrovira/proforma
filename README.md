@@ -21,6 +21,7 @@ proforma
 * Git http://git-scm.com/downloads
 * Python 2.7 http://www.python.org/download/releases/2.7/
 * MongoDB 2.x http://www.mongodb.org/downloads
+    * MongoDB SQL cheat-sheet http://docs.mongodb.org/manual/reference/sql-comparison/
 * NodeJS NPM http://nodejs.org/download/
 
 #### Web Application Initial Build
