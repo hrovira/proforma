@@ -21,18 +21,17 @@ module.exports = Backbone.Router.extend({
     },
 
     incomplete: function() {
-        var model = new Model({
-            "url": "dao/entries",
+        var model = new Model({ "url": "dao/entries" });
+
+        var grid = new IncompleteEntriesGrid({ "model": model, "title": "Incomplete Entries" });
+        $(".c-main").html(grid.render().el);
+
+        model.fetch({
             "data": {
                 "state": "incomplete"
             },
             "traditional": true
         });
-
-        var grid = new IncompleteEntriesGrid({ "model": model, "title": "Incomplete Entries" });
-        $(".c-main").html(grid.render().el);
-
-        model.fetch();
     },
 
     new_entry: function() {
